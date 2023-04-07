@@ -19,6 +19,6 @@ export const topicRouter = createTRPCRouter({
                     userId: ctx.session.user.id,
                 },
             });
-
+    }),
 });
 
