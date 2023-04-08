@@ -3,7 +3,7 @@ import CodeMirror from '@uiw/react-codemirror';
 import { markdown, markdownLanguage } from '@codemirror/lang-markdown';
 import { languages } from '@codemirror/language-data';
 
-export const NoteEditor: React.FC = ({
+export const NoteEditor = ({
     onSave,
 }: {
     onSave: (note: { title: string; content: string }) => void;
@@ -36,7 +36,7 @@ export const NoteEditor: React.FC = ({
                     className="border border-gray-300"
                 />
             </div>
-            <div className="card-actions justify-end">
+            <div className="card-actions justify-end m-5">
                 <button
                     className="btn btn-primary"
                     disabled={title.trim().length === 0 || code.trim().length === 0}
